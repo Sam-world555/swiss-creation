@@ -3,17 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Login - Swiss Creation</title>
+  <title>Shopping Cart - Swiss Creation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
-    <h2>Admin Login</h2>
-    <input type="text" id="username" placeholder="Username" class="form-control">
-    <input type="password" id="password" placeholder="Password" class="form-control">
-    <button class="cta-btn" onclick="adminLogin()">Login</button>
-    <p style="color:#999;font-size:0.9em;">Default: admin / admin123</p>
-  </div>
+  <nav class="navbar">
+    <div class="brand">Swiss Creation</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="user-login.html">Login</a>
+      <a href="admin-login.html">Admin</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+  
+  <section class="cart-section">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total" style="text-align:right;margin:20px 0"></div>
+    <div style="text-align:right">
+      <button class="cta-btn" onclick="placeOrder()">Place Order</button>
+    </div>
+  </section>
+
   <script src="script.js"></script>
+  <script>
+    displayCart();
+    updateCartCount();
+    
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

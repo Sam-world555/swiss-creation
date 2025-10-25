@@ -3,29 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cart - Swiss Creation</title>
+  <title>Products - Swiss Creation</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="brand">Swiss Creation</div>
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="user-login.html">Login</a>
       <a href="admin-login.html">Admin</a>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </nav>
-  <section class="cart-section">
-    <h2>Your Cart</h2>
-    <div id="cart-items"></div>
-    <div id="cart-total"></div>
-    <button class="cta-btn" onclick="placeOrder()">Place Order</button>
+  
+  <section class="products-section">
+    <h2>Our Premium Collection</h2>
+    <p style="text-align:center;color:#666;max-width:600px;margin:0 auto 40px">Swiss Creation - Quality Formal Pants, Designer Fabrics & Latest Ladies Wear from Bhilwara</p>
+    <div id="products-grid" class="product-grid"></div>
   </section>
+
   <script src="script.js"></script>
   <script>
-    displayCart();
+    displayProducts();
     updateCartCount();
+    
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
   </script>
 </body>
 </html>
