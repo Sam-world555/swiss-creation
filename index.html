@@ -2,110 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Swiss Creation | Fashion, Fabrics & Ladieswear</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiss Creation - Premium Fashion from Bhilwara</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar fade-in">
+  <!-- Navbar -->
+  <nav class="navbar">
     <div class="brand">Swiss Creation</div>
     <div class="nav-links">
-      <a href="#hero">Home</a>
-      <a href="#products">Products</a>
-      <a href="#about">About</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="user-login.html">Login</a>
+      <a href="admin-login.html">Admin</a>
     </div>
   </nav>
-  <section class="hero-section" id="hero">
-    <div class="hero-content slide-up">
-      <h1>Upgrade Your Style<br><span class="highlight">Swiss Creation, Bhilwara</span></h1>
-      <p>Premium pants, top-notch fabrics & latest fashion for ladies—all in one brand!</p>
-      <button class="cta-btn pulse" onclick="window.location='#contact'">Enquiry on WhatsApp</button>
-    </div>
-    <div class="hero-img">
-      <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Fashion Main" />
-    </div>
-  </section>
 
-  <section class="products-section" id="products">
-    <h2 class="section-title slide-in">Our Products</h2>
-    <div class="product-grid">
-      <div class="card pop">
-        <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Formal Pants" />
-        <h3>Formal Pants</h3>
-        <p>Best fit, many colors, wrinkle-free fabric.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Premium Fashion from <span class="hero-highlight">Bhilwara</span></h1>
+      <p class="hero-subtitle">Quality Formal Pants, Designer Fabrics & Latest Ladies Wear</p>
+      <div class="hero-features">
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>Premium Quality</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>Best Prices</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <span>Fast Delivery</span>
+        </div>
       </div>
-      <div class="card pop" style="animation-delay:.2s">
-        <img src="https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg" alt="Fabric" />
-        <h3>Premium Fabrics</h3>
-        <p>Variety: Cotton, Poly, Linen blends, Unmatched quality.</p>
-      </div>
-      <div class="card pop" style="animation-delay:.4s">
-        <img src="https://images.pexels.com/photos/13815529/pexels-photo-13815529.jpeg" alt="Ladies Kurtis" />
-        <h3>Ladies’ Kurtis & Suits</h3>
-        <p>Trendy, comfortable, premium ethnic designs.</p>
-      </div>
+      <a href="products.html"><button class="cta-btn hero-cta">Shop Now</button></a>
     </div>
   </section>
 
-  <section id="about" class="fade-in">
-    <h2 class="section-title">Who We Are</h2>
-    <p>
-      <b>Swiss Creation</b> – Bhilwara’s trusted fashion house at <b>Sangneri Gate</b>.<br>
-      Trend-setter in premium formal pants, fabric materials, and exclusive ladies' wear since 2015.<br>
-      <span style="color:#9C27B0;font-size:1.35em">💯</span> Good prices, assured quality, happy customers!
-    </p>
-  </section>
-
-  <section id="reviews" class="fade-in">
-    <h2 class="section-title">What Our Customers Say</h2>
-    <div class="review-wrap">
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <div class="review-text">Great quality—pants ka fit and finishing best hai! Highly recommended. 🙏</div>
-        <div class="review-author">– Rajesh J.</div>
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>Why Choose Swiss Creation?</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🎯</div>
+        <h3>Premium Quality</h3>
+        <p>Top-quality fabrics and stitching. Every product is crafted with care.</p>
       </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <div class="review-text">Blouse, suits aur fabric variety market mein sabse zyada modern yahi par hai.</div>
-        <div class="review-author">– Sakshi P.</div>
+      <div class="about-card">
+        <div class="about-icon">💰</div>
+        <h3>Best Prices</h3>
+        <p>Affordable pricing without compromising on quality. Value for money guaranteed.</p>
       </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <div class="review-text">Service bahut achi, bulk order mein bhi quality same mili!</div>
-        <div class="review-author">– Rohit B.</div>
+      <div class="about-card">
+        <div class="about-icon">🚚</div>
+        <h3>Fast Delivery</h3>
+        <p>Quick delivery across Rajasthan. We value your time.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">📍</div>
+        <h3>Bhilwara Based</h3>
+        <p>Located at Sangneri Gate, Bhilwara. Visit our store or order online.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2 class="section-title">Contact & Location</h2>
-    <div class="contact-flex">
-      <div>
-        <span class="contact-label">Address:</span> Rajasthan, Bhilwara, Sangneri Gate<br>
-        <span class="contact-label">Email:</span> swisscreation@email.com<br>
-        <span class="contact-label">Call/WhatsApp:</span>
-        <a class="walink" href="https://wa.me/919376108601" target="_blank">+91 9376108601</a>
-      </div>
-      <button class="cta-btn pulse" onclick="window.open('https://wa.me/919376108601','_blank')">WhatsApp Now</button>
+  <!-- Contact CTA -->
+  <section class="cta-section">
+    <h2>Ready to Shop?</h2>
+    <p>Browse our collection or contact us for bulk orders</p>
+    <div class="cta-buttons">
+      <a href="products.html"><button class="cta-btn">View Products</button></a>
+      <a href="https://wa.me/919376108601" target="_blank"><button class="cta-btn cta-btn-secondary">WhatsApp Us</button></a>
     </div>
   </section>
 
-  <div class="footer">
-    © 2025 Swiss Creation • Rajasthan, Bhilwara. <br>Design & Code support by AI.
-  </div>
-  <script>
-    // Simple animations on load
-    window.onload = function(){
-      document.querySelectorAll('.fade-in').forEach(el=>el.style.opacity = 1);
-      document.querySelectorAll('.slide-up').forEach(el=>el.style.transform = 'translateY(0)');
-      document.querySelectorAll('.slide-in').forEach(el=>el.style.transform = 'translateX(0)');
-      setTimeout(()=>{
-        document.querySelectorAll('.pop').forEach(el=>el.style.opacity = 1);
-      },700);
-    }
-  </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Swiss Creation</h3>
+        <p>Premium Fashion from Bhilwara</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>📍 Sangneri Gate, Bhilwara, Rajasthan</p>
+        <p>📞 +91 9376108601</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="products.html">Products</a><br>
+        <a href="user-login.html">Login</a><br>
+        <a href="admin-login.html">Admin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Swiss Creation. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

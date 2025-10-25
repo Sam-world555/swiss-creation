@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Swiss Creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">Swiss Creation</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="user-login.html">Login</a>
+    </div>
+  </nav>
+  <div class="login-container">
+    <h2 style="text-align:center;margin-bottom:20px">Create Account</h2>
+    <input type="text" id="reg-name" placeholder="Full Name" class="form-control">
+    <input type="email" id="reg-email" placeholder="Email" class="form-control">
+    <input type="password" id="reg-password" placeholder="Password" class="form-control">
+    <button class="cta-btn" onclick="userRegister()">Register</button>
+    <p style="text-align:center;margin-top:20px">
+      Already have an account? <a href="user-login.html" style="color:#667eea;font-weight:600">Login</a>
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

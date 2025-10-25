@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Swiss Creation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">Admin Panel</div>
+    <div class="nav-links">
+      <a href="admin-panel.html">Orders</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+  <section class="admin-section">
+    <h2>Customer Orders</h2>
+    <div id="admin-orders"></div>
+  </section>
+  <script src="script.js"></script>
+  <script>
+    checkAdmin();
+    displayOrders();
+  </script>
+</body>
+</html>
